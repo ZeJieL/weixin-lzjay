@@ -1,8 +1,6 @@
 package org.lzjay.weixin.controller;
 
-
 import java.io.IOException;
-
 
 import org.lzjay.weixin.domain.InMessage;
 import org.lzjay.weixin.service.MessageConvertHelper;
