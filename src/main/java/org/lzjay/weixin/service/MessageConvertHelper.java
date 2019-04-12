@@ -7,6 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import javax.xml.bind.JAXB;
 
 import org.lzjay.weixin.domain.InMessage;
+import org.lzjay.weixin.domain.event.EventInMessage;
 import org.lzjay.weixin.domain.image.ImageInMessage;
 import org.lzjay.weixin.domain.text.TextInMessage;
 public class MessageConvertHelper {
@@ -20,7 +21,7 @@ public class MessageConvertHelper {
 		typeMap.put("vioce", TextInMessage.class);
 		typeMap.put("video", TextInMessage.class);
 		typeMap.put("location", TextInMessage.class);
-		typeMap.put("event", TextInMessage.class);
+		typeMap.put("event", EventInMessage.class);
 		typeMap.put("link", TextInMessage.class);
 		typeMap.put("shortvideo", TextInMessage.class);
 	}
